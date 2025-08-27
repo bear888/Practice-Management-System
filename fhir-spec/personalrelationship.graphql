@@ -1,0 +1,158 @@
+# FHIR GraphQL Schema. Version 6.0.0-ballot3
+
+# import * from 'types.graphql'
+
+interface IPersonalRelationship implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  source: Reference!
+  relationshipType: CodeableConcept!
+  target: Reference!
+  period: [Period]
+  confidence: CodeableConcept
+  asserter: Reference
+  group: [Reference]
+}
+
+type PersonalRelationship implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  source: Reference!
+  relationshipType: CodeableConcept!
+  target: Reference!
+  period: [Period]
+  confidence: CodeableConcept
+  asserter: Reference
+  group: [Reference]
+}
+
+input PersonalRelationshipInput {
+  id: ID
+  meta: MetaInput
+  implicitRules: uri  _implicitRules: ElementBaseInput
+  language: code  _language: ElementBaseInput
+  text: NarrativeInput
+  contained: [ResourceInput]
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  source: ReferenceInput!
+  relationshipType: CodeableConceptInput!
+  target: ReferenceInput!
+  period: [PeriodInput]
+  confidence: CodeableConceptInput
+  asserter: ReferenceInput
+  group: [ReferenceInput]
+}
+
+type PersonalRelationshipReadType {
+  PersonalRelationship(id: ID!): PersonalRelationship
+}
+
+type PersonalRelationshipListType {
+  PersonalRelationshipList(_filter: String
+    patient: [reference]
+    relationship: [token]
+    source: [reference]
+    target: [reference]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): [PersonalRelationship]
+}
+
+type PersonalRelationshipConnectionType {
+  PersonalRelationshipConection(_filter: String
+    patient: [reference]
+    relationship: [token]
+    source: [reference]
+    target: [reference]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): PersonalRelationshipConnection
+}
+
+type PersonalRelationshipConnection {
+  count: Int
+  offset: Int
+  pagesize: Int
+  first: ID
+  previous: ID
+  next: ID
+  last: ID
+  edges: [PersonalRelationshipEdge]
+}
+
+type PersonalRelationshipEdge {
+  mode: String
+  score: Float
+  resource: PersonalRelationship
+}
+
+type PersonalRelationshipCreateType {
+  PersonalRelationshipCreate(resource: PersonalRelationshipInput): PersonalRelationshipCreation
+}
+
+type PersonalRelationshipCreation {
+  location: String
+  resource: PersonalRelationship
+  information: OperationOutcome
+}
+
+type PersonalRelationshipUpdateType {
+  PersonalRelationshipUpdate(id: ID, resource: PersonalRelationshipInput): PersonalRelationshipUpdate
+}
+
+type PersonalRelationshipUpdate {
+  resource: PersonalRelationship
+  information: OperationOutcome
+}
+
+type PersonalRelationshipDeleteType {
+  PersonalRelationshipDelete(id: ID): PersonalRelationshipDelete
+}
+
+type PersonalRelationshipDelete {
+  information: OperationOutcome
+}
+

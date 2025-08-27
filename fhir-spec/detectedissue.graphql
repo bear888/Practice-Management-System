@@ -1,0 +1,237 @@
+# FHIR GraphQL Schema. Version 6.0.0-ballot3
+
+# import * from 'types.graphql'
+
+interface IDetectedIssue implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  status: code  _status: ElementBase
+  category: [CodeableConcept]
+  code: CodeableConcept
+  severity: CodeableConcept
+  subject: Reference
+  encounter: Reference
+  identifiedDateTime: dateTime  _identifiedDateTime: ElementBase
+  identifiedPeriod: Period
+  identifiedTiming: Timing
+  author: Reference
+  implicated: [Reference]
+  evidence: [DetectedIssueEvidence]
+  detail: markdown  _detail: ElementBase
+  reference: uri  _reference: ElementBase
+  qualityOfEvidence: CodeableConcept
+  managementCode: CodeableConcept
+  mitigation: [DetectedIssueMitigation]
+}
+
+type DetectedIssue implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  status: code  _status: ElementBase
+  category: [CodeableConcept]
+  code: CodeableConcept
+  severity: CodeableConcept
+  subject: Reference
+  encounter: Reference
+  identifiedDateTime: dateTime  _identifiedDateTime: ElementBase
+  identifiedPeriod: Period
+  identifiedTiming: Timing
+  author: Reference
+  implicated: [Reference]
+  evidence: [DetectedIssueEvidence]
+  detail: markdown  _detail: ElementBase
+  reference: uri  _reference: ElementBase
+  qualityOfEvidence: CodeableConcept
+  managementCode: CodeableConcept
+  mitigation: [DetectedIssueMitigation]
+}
+
+type DetectedIssueEvidence {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  code: [CodeableConcept]
+  detail: [Reference]
+}
+
+type DetectedIssueMitigation {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  action: CodeableConcept!
+  date: dateTime  _date: ElementBase
+  author: Reference
+  note: [Annotation]
+}
+
+input DetectedIssueInput {
+  id: ID
+  meta: MetaInput
+  implicitRules: uri  _implicitRules: ElementBaseInput
+  language: code  _language: ElementBaseInput
+  text: NarrativeInput
+  contained: [ResourceInput]
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  identifier: [IdentifierInput]
+  status: code  _status: ElementBaseInput
+  category: [CodeableConceptInput]
+  code: CodeableConceptInput
+  severity: CodeableConceptInput
+  subject: ReferenceInput
+  encounter: ReferenceInput
+  identifiedDateTime: dateTime  _identifiedDateTime: ElementBaseInput
+  identifiedPeriod: PeriodInput
+  identifiedTiming: TimingInput
+  author: ReferenceInput
+  implicated: [ReferenceInput]
+  evidence: [DetectedIssueEvidenceInputInput]
+  detail: markdown  _detail: ElementBaseInput
+  reference: uri  _reference: ElementBaseInput
+  qualityOfEvidence: CodeableConceptInput
+  managementCode: CodeableConceptInput
+  mitigation: [DetectedIssueMitigationInputInput]
+}
+
+input DetectedIssueEvidenceInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  code: [CodeableConceptInput]
+  detail: [ReferenceInput]
+}
+
+input DetectedIssueMitigationInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  action: CodeableConceptInput!
+  date: dateTime  _date: ElementBaseInput
+  author: ReferenceInput
+  note: [AnnotationInput]
+}
+
+type DetectedIssueReadType {
+  DetectedIssue(id: ID!): DetectedIssue
+}
+
+type DetectedIssueListType {
+  DetectedIssueList(_filter: String
+    author: [reference]
+    category: [token]
+    code: [token]
+    identified: [date]
+    identifier: [token]
+    implicated: [reference]
+    patient: [reference]
+    status: [token]
+    subject: [reference]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): [DetectedIssue]
+}
+
+type DetectedIssueConnectionType {
+  DetectedIssueConection(_filter: String
+    author: [reference]
+    category: [token]
+    code: [token]
+    identified: [date]
+    identifier: [token]
+    implicated: [reference]
+    patient: [reference]
+    status: [token]
+    subject: [reference]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): DetectedIssueConnection
+}
+
+type DetectedIssueConnection {
+  count: Int
+  offset: Int
+  pagesize: Int
+  first: ID
+  previous: ID
+  next: ID
+  last: ID
+  edges: [DetectedIssueEdge]
+}
+
+type DetectedIssueEdge {
+  mode: String
+  score: Float
+  resource: DetectedIssue
+}
+
+type DetectedIssueCreateType {
+  DetectedIssueCreate(resource: DetectedIssueInput): DetectedIssueCreation
+}
+
+type DetectedIssueCreation {
+  location: String
+  resource: DetectedIssue
+  information: OperationOutcome
+}
+
+type DetectedIssueUpdateType {
+  DetectedIssueUpdate(id: ID, resource: DetectedIssueInput): DetectedIssueUpdate
+}
+
+type DetectedIssueUpdate {
+  resource: DetectedIssue
+  information: OperationOutcome
+}
+
+type DetectedIssueDeleteType {
+  DetectedIssueDelete(id: ID): DetectedIssueDelete
+}
+
+type DetectedIssueDelete {
+  information: OperationOutcome
+}
+

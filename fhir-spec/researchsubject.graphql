@@ -1,0 +1,211 @@
+# FHIR GraphQL Schema. Version 6.0.0-ballot3
+
+# import * from 'types.graphql'
+
+interface IResearchSubject implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  status: code  _status: ElementBase
+  period: Period
+  study: Reference!
+  subject: Reference!
+  subjectState: [ResearchSubjectSubjectState]
+  subjectMilestone: [ResearchSubjectSubjectMilestone]
+  assignedComparisonGroup: ID  _assignedComparisonGroup: ElementBase
+  actualComparisonGroup: ID  _actualComparisonGroup: ElementBase
+  consent: [Reference]
+}
+
+type ResearchSubject implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  status: code  _status: ElementBase
+  period: Period
+  study: Reference!
+  subject: Reference!
+  subjectState: [ResearchSubjectSubjectState]
+  subjectMilestone: [ResearchSubjectSubjectMilestone]
+  assignedComparisonGroup: ID  _assignedComparisonGroup: ElementBase
+  actualComparisonGroup: ID  _actualComparisonGroup: ElementBase
+  consent: [Reference]
+}
+
+type ResearchSubjectSubjectState {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  code: CodeableConcept!
+  startDate: dateTime  _startDate: ElementBase
+  endDate: dateTime  _endDate: ElementBase
+  reason: CodeableConcept
+}
+
+type ResearchSubjectSubjectMilestone {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  milestone: CodeableConcept!
+  date: dateTime  _date: ElementBase
+  reason: [CodeableConcept]
+}
+
+input ResearchSubjectInput {
+  id: ID
+  meta: MetaInput
+  implicitRules: uri  _implicitRules: ElementBaseInput
+  language: code  _language: ElementBaseInput
+  text: NarrativeInput
+  contained: [ResourceInput]
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  identifier: [IdentifierInput]
+  status: code  _status: ElementBaseInput
+  period: PeriodInput
+  study: ReferenceInput!
+  subject: ReferenceInput!
+  subjectState: [ResearchSubjectSubjectStateInputInput]
+  subjectMilestone: [ResearchSubjectSubjectMilestoneInputInput]
+  assignedComparisonGroup: ID  _assignedComparisonGroup: ElementBaseInput
+  actualComparisonGroup: ID  _actualComparisonGroup: ElementBaseInput
+  consent: [ReferenceInput]
+}
+
+input ResearchSubjectSubjectStateInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  code: CodeableConceptInput!
+  startDate: dateTime  _startDate: ElementBaseInput
+  endDate: dateTime  _endDate: ElementBaseInput
+  reason: CodeableConceptInput
+}
+
+input ResearchSubjectSubjectMilestoneInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  milestone: CodeableConceptInput!
+  date: dateTime  _date: ElementBaseInput
+  reason: [CodeableConceptInput]
+}
+
+type ResearchSubjectReadType {
+  ResearchSubject(id: ID!): ResearchSubject
+}
+
+type ResearchSubjectListType {
+  ResearchSubjectList(_filter: String
+    date: [date]
+    identifier: [token]
+    patient: [reference]
+    status: [token]
+    study: [reference]
+    subject: [reference]
+    subject_state: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): [ResearchSubject]
+}
+
+type ResearchSubjectConnectionType {
+  ResearchSubjectConection(_filter: String
+    date: [date]
+    identifier: [token]
+    patient: [reference]
+    status: [token]
+    study: [reference]
+    subject: [reference]
+    subject_state: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): ResearchSubjectConnection
+}
+
+type ResearchSubjectConnection {
+  count: Int
+  offset: Int
+  pagesize: Int
+  first: ID
+  previous: ID
+  next: ID
+  last: ID
+  edges: [ResearchSubjectEdge]
+}
+
+type ResearchSubjectEdge {
+  mode: String
+  score: Float
+  resource: ResearchSubject
+}
+
+type ResearchSubjectCreateType {
+  ResearchSubjectCreate(resource: ResearchSubjectInput): ResearchSubjectCreation
+}
+
+type ResearchSubjectCreation {
+  location: String
+  resource: ResearchSubject
+  information: OperationOutcome
+}
+
+type ResearchSubjectUpdateType {
+  ResearchSubjectUpdate(id: ID, resource: ResearchSubjectInput): ResearchSubjectUpdate
+}
+
+type ResearchSubjectUpdate {
+  resource: ResearchSubject
+  information: OperationOutcome
+}
+
+type ResearchSubjectDeleteType {
+  ResearchSubjectDelete(id: ID): ResearchSubjectDelete
+}
+
+type ResearchSubjectDelete {
+  information: OperationOutcome
+}
+

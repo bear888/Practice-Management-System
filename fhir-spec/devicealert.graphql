@@ -1,0 +1,249 @@
+# FHIR GraphQL Schema. Version 6.0.0-ballot3
+
+# import * from 'types.graphql'
+
+interface IDeviceAlert implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  status: code  _status: ElementBase
+  category: [CodeableConcept]
+  type: code  _type: ElementBase
+  priority: code  _priority: ElementBase
+  code: CodeableConcept!
+  subject: Reference!
+  presence: Boolean  _presence: ElementBase
+  presencePeriod: Period
+  device: Reference
+  derivedFrom: [DeviceAlertDerivedFrom]
+  acknowledged: Boolean  _acknowledged: ElementBase
+  label: String  _label: ElementBase
+  signal: [DeviceAlertSignal]
+}
+
+type DeviceAlert implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  status: code  _status: ElementBase
+  category: [CodeableConcept]
+  type: code  _type: ElementBase
+  priority: code  _priority: ElementBase
+  code: CodeableConcept!
+  subject: Reference!
+  presence: Boolean  _presence: ElementBase
+  presencePeriod: Period
+  device: Reference
+  derivedFrom: [DeviceAlertDerivedFrom]
+  acknowledged: Boolean  _acknowledged: ElementBase
+  label: String  _label: ElementBase
+  signal: [DeviceAlertSignal]
+}
+
+type DeviceAlertDerivedFrom {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  observation: Reference!
+  component: Coding
+  limit: Range
+}
+
+type DeviceAlertSignal {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  activationState: code  _activationState: ElementBase
+  presence: code  _presence: ElementBase
+  annunciator: CodeableReference
+  manifestation: CodeableConcept
+  type: [CodeableConcept]
+  indication: Period
+}
+
+input DeviceAlertInput {
+  id: ID
+  meta: MetaInput
+  implicitRules: uri  _implicitRules: ElementBaseInput
+  language: code  _language: ElementBaseInput
+  text: NarrativeInput
+  contained: [ResourceInput]
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  identifier: [IdentifierInput]
+  status: code  _status: ElementBaseInput
+  category: [CodeableConceptInput]
+  type: code  _type: ElementBaseInput
+  priority: code  _priority: ElementBaseInput
+  code: CodeableConceptInput!
+  subject: ReferenceInput!
+  presence: Boolean  _presence: ElementBaseInput
+  presencePeriod: PeriodInput
+  device: ReferenceInput
+  derivedFrom: [DeviceAlertDerivedFromInputInput]
+  acknowledged: Boolean  _acknowledged: ElementBaseInput
+  label: String  _label: ElementBaseInput
+  signal: [DeviceAlertSignalInputInput]
+}
+
+input DeviceAlertDerivedFromInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  observation: ReferenceInput!
+  component: CodingInput
+  limit: RangeInput
+}
+
+input DeviceAlertSignalInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  activationState: code  _activationState: ElementBaseInput
+  presence: code  _presence: ElementBaseInput
+  annunciator: CodeableReferenceInput
+  manifestation: CodeableConceptInput
+  type: [CodeableConceptInput]
+  indication: PeriodInput
+}
+
+type DeviceAlertReadType {
+  DeviceAlert(id: ID!): DeviceAlert
+}
+
+type DeviceAlertListType {
+  DeviceAlertList(_filter: String
+    acknowledged: [token]
+    annunciator_concept: [token]
+    annunciator_device: [reference]
+    category: [token]
+    code: [token]
+    derived_from: [reference]
+    device: [reference]
+    identifier: [token]
+    indication: [date]
+    manifestation: [token]
+    patient: [reference]
+    period: [date]
+    presence: [token]
+    priority: [token]
+    signal_presence: [token]
+    status: [token]
+    subject: [reference]
+    type: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): [DeviceAlert]
+}
+
+type DeviceAlertConnectionType {
+  DeviceAlertConection(_filter: String
+    acknowledged: [token]
+    annunciator_concept: [token]
+    annunciator_device: [reference]
+    category: [token]
+    code: [token]
+    derived_from: [reference]
+    device: [reference]
+    identifier: [token]
+    indication: [date]
+    manifestation: [token]
+    patient: [reference]
+    period: [date]
+    presence: [token]
+    priority: [token]
+    signal_presence: [token]
+    status: [token]
+    subject: [reference]
+    type: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): DeviceAlertConnection
+}
+
+type DeviceAlertConnection {
+  count: Int
+  offset: Int
+  pagesize: Int
+  first: ID
+  previous: ID
+  next: ID
+  last: ID
+  edges: [DeviceAlertEdge]
+}
+
+type DeviceAlertEdge {
+  mode: String
+  score: Float
+  resource: DeviceAlert
+}
+
+type DeviceAlertCreateType {
+  DeviceAlertCreate(resource: DeviceAlertInput): DeviceAlertCreation
+}
+
+type DeviceAlertCreation {
+  location: String
+  resource: DeviceAlert
+  information: OperationOutcome
+}
+
+type DeviceAlertUpdateType {
+  DeviceAlertUpdate(id: ID, resource: DeviceAlertInput): DeviceAlertUpdate
+}
+
+type DeviceAlertUpdate {
+  resource: DeviceAlert
+  information: OperationOutcome
+}
+
+type DeviceAlertDeleteType {
+  DeviceAlertDelete(id: ID): DeviceAlertDelete
+}
+
+type DeviceAlertDelete {
+  information: OperationOutcome
+}
+

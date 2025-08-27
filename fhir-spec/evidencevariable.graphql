@@ -1,0 +1,463 @@
+# FHIR GraphQL Schema. Version 6.0.0-ballot3
+
+# import * from 'types.graphql'
+
+interface IEvidenceVariable implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  url: uri  _url: ElementBase
+  identifier: [Identifier]
+  version: String  _version: ElementBase
+  versionAlgorithmString: String  _versionAlgorithmString: ElementBase
+  versionAlgorithmCoding: Coding
+  name: String  _name: ElementBase
+  title: String  _title: ElementBase
+  shortTitle: String  _shortTitle: ElementBase
+  citeAs: markdown  _citeAs: ElementBase
+  status: code  _status: ElementBase
+  experimental: Boolean  _experimental: ElementBase
+  date: dateTime  _date: ElementBase
+  author: [ContactDetail]
+  publisher: String  _publisher: ElementBase
+  contact: [ContactDetail]
+  recorder: [ContactDetail]
+  editor: [ContactDetail]
+  reviewer: [ContactDetail]
+  endorser: [ContactDetail]
+  description: markdown  _description: ElementBase
+  note: [Annotation]
+  useContext: [UsageContext]
+  purpose: markdown  _purpose: ElementBase
+  copyright: markdown  _copyright: ElementBase
+  copyrightLabel: String  _copyrightLabel: ElementBase
+  approvalDate: date  _approvalDate: ElementBase
+  lastReviewDate: date  _lastReviewDate: ElementBase
+  effectivePeriod: Period
+  relatesTo: [EvidenceVariableRelatesTo]
+  actual: Boolean  _actual: ElementBase
+  definition: CodeableReference
+  definitionModifier: [EvidenceVariableDefinitionModifier]
+  handling: CodeableConcept
+  category: [EvidenceVariableCategory]
+  conditional: Expression
+  classifier: [CodeableConcept]
+  dataStorage: [EvidenceVariableDataStorage]
+  timing: RelativeTime
+  period: Period
+  constraint: [EvidenceVariableConstraint]
+  missingDataMeaning: [CodeableConcept]
+  unacceptableDataHandling: [CodeableConcept]
+}
+
+type EvidenceVariable implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  url: uri  _url: ElementBase
+  identifier: [Identifier]
+  version: String  _version: ElementBase
+  versionAlgorithmString: String  _versionAlgorithmString: ElementBase
+  versionAlgorithmCoding: Coding
+  name: String  _name: ElementBase
+  title: String  _title: ElementBase
+  shortTitle: String  _shortTitle: ElementBase
+  citeAs: markdown  _citeAs: ElementBase
+  status: code  _status: ElementBase
+  experimental: Boolean  _experimental: ElementBase
+  date: dateTime  _date: ElementBase
+  author: [ContactDetail]
+  publisher: String  _publisher: ElementBase
+  contact: [ContactDetail]
+  recorder: [ContactDetail]
+  editor: [ContactDetail]
+  reviewer: [ContactDetail]
+  endorser: [ContactDetail]
+  description: markdown  _description: ElementBase
+  note: [Annotation]
+  useContext: [UsageContext]
+  purpose: markdown  _purpose: ElementBase
+  copyright: markdown  _copyright: ElementBase
+  copyrightLabel: String  _copyrightLabel: ElementBase
+  approvalDate: date  _approvalDate: ElementBase
+  lastReviewDate: date  _lastReviewDate: ElementBase
+  effectivePeriod: Period
+  relatesTo: [EvidenceVariableRelatesTo]
+  actual: Boolean  _actual: ElementBase
+  definition: CodeableReference
+  definitionModifier: [EvidenceVariableDefinitionModifier]
+  handling: CodeableConcept
+  category: [EvidenceVariableCategory]
+  conditional: Expression
+  classifier: [CodeableConcept]
+  dataStorage: [EvidenceVariableDataStorage]
+  timing: RelativeTime
+  period: Period
+  constraint: [EvidenceVariableConstraint]
+  missingDataMeaning: [CodeableConcept]
+  unacceptableDataHandling: [CodeableConcept]
+}
+
+type EvidenceVariableRelatesTo {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  type: code  _type: ElementBase
+  targetUri: uri  _targetUri: ElementBase
+  targetAttachment: Attachment
+  targetCanonical: canonical  _targetCanonical: ElementBase
+  targetMarkdown: markdown  _targetMarkdown: ElementBase
+}
+
+type EvidenceVariableDefinitionModifier {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  code: CodeableConcept!
+  valueCodeableConcept: CodeableConcept
+  valueBoolean: Boolean  _valueBoolean: ElementBase
+  valueQuantity: Quantity
+  valueRange: Range
+  valuePeriod: Period
+  valueRelativeTime: RelativeTime
+  valueReference: Reference
+  valueExpression: Expression
+  valueUri: uri  _valueUri: ElementBase
+}
+
+type EvidenceVariableCategory {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  name: String  _name: ElementBase
+  valueCodeableConcept: CodeableConcept
+  valueQuantity: Quantity
+  valueRange: Range
+  valueReference: Reference
+}
+
+type EvidenceVariableDataStorage {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  datatype: CodeableConcept
+  path: String  _path: ElementBase
+  delimiter: String  _delimiter: ElementBase
+  component: [EvidenceVariableDataStorage]
+}
+
+type EvidenceVariableConstraint {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  conditional: CodeableConcept
+  minimumQuantity: Quantity
+  maximumQuantity: Quantity
+  earliestDateTime: dateTime  _earliestDateTime: ElementBase
+  latestDateTime: dateTime  _latestDateTime: ElementBase
+  minimumStringLength: unsignedInt  _minimumStringLength: ElementBase
+  maximumStringLength: positiveInt  _maximumStringLength: ElementBase
+  code: CodeableConcept
+  expression: Expression
+  expectedValueSet: Reference
+  expectedUnitsValueSet: Reference
+  anyValueAllowed: Boolean  _anyValueAllowed: ElementBase
+}
+
+input EvidenceVariableInput {
+  id: ID
+  meta: MetaInput
+  implicitRules: uri  _implicitRules: ElementBaseInput
+  language: code  _language: ElementBaseInput
+  text: NarrativeInput
+  contained: [ResourceInput]
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  url: uri  _url: ElementBaseInput
+  identifier: [IdentifierInput]
+  version: String  _version: ElementBaseInput
+  versionAlgorithmString: String  _versionAlgorithmString: ElementBaseInput
+  versionAlgorithmCoding: CodingInput
+  name: String  _name: ElementBaseInput
+  title: String  _title: ElementBaseInput
+  shortTitle: String  _shortTitle: ElementBaseInput
+  citeAs: markdown  _citeAs: ElementBaseInput
+  status: code  _status: ElementBaseInput
+  experimental: Boolean  _experimental: ElementBaseInput
+  date: dateTime  _date: ElementBaseInput
+  author: [ContactDetailInput]
+  publisher: String  _publisher: ElementBaseInput
+  contact: [ContactDetailInput]
+  recorder: [ContactDetailInput]
+  editor: [ContactDetailInput]
+  reviewer: [ContactDetailInput]
+  endorser: [ContactDetailInput]
+  description: markdown  _description: ElementBaseInput
+  note: [AnnotationInput]
+  useContext: [UsageContextInput]
+  purpose: markdown  _purpose: ElementBaseInput
+  copyright: markdown  _copyright: ElementBaseInput
+  copyrightLabel: String  _copyrightLabel: ElementBaseInput
+  approvalDate: date  _approvalDate: ElementBaseInput
+  lastReviewDate: date  _lastReviewDate: ElementBaseInput
+  effectivePeriod: PeriodInput
+  relatesTo: [EvidenceVariableRelatesToInputInput]
+  actual: Boolean  _actual: ElementBaseInput
+  definition: CodeableReferenceInput
+  definitionModifier: [EvidenceVariableDefinitionModifierInputInput]
+  handling: CodeableConceptInput
+  category: [EvidenceVariableCategoryInputInput]
+  conditional: ExpressionInput
+  classifier: [CodeableConceptInput]
+  dataStorage: [EvidenceVariableDataStorageInputInput]
+  timing: RelativeTimeInput
+  period: PeriodInput
+  constraint: [EvidenceVariableConstraintInputInput]
+  missingDataMeaning: [CodeableConceptInput]
+  unacceptableDataHandling: [CodeableConceptInput]
+}
+
+input EvidenceVariableRelatesToInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  type: code  _type: ElementBaseInput
+  targetUri: uri  _targetUri: ElementBaseInput
+  targetAttachment: AttachmentInput
+  targetCanonical: canonical  _targetCanonical: ElementBaseInput
+  targetMarkdown: markdown  _targetMarkdown: ElementBaseInput
+}
+
+input EvidenceVariableDefinitionModifierInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  code: CodeableConceptInput!
+  valueCodeableConcept: CodeableConceptInput
+  valueBoolean: Boolean  _valueBoolean: ElementBaseInput
+  valueQuantity: QuantityInput
+  valueRange: RangeInput
+  valuePeriod: PeriodInput
+  valueRelativeTime: RelativeTimeInput
+  valueReference: ReferenceInput
+  valueExpression: ExpressionInput
+  valueUri: uri  _valueUri: ElementBaseInput
+}
+
+input EvidenceVariableCategoryInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  name: String  _name: ElementBaseInput
+  valueCodeableConcept: CodeableConceptInput
+  valueQuantity: QuantityInput
+  valueRange: RangeInput
+  valueReference: ReferenceInput
+}
+
+input EvidenceVariableDataStorageInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  datatype: CodeableConceptInput
+  path: String  _path: ElementBaseInput
+  delimiter: String  _delimiter: ElementBaseInput
+  component: [EvidenceVariableDataStorageInputInput]
+}
+
+input EvidenceVariableConstraintInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  conditional: CodeableConceptInput
+  minimumQuantity: QuantityInput
+  maximumQuantity: QuantityInput
+  earliestDateTime: dateTime  _earliestDateTime: ElementBaseInput
+  latestDateTime: dateTime  _latestDateTime: ElementBaseInput
+  minimumStringLength: unsignedInt  _minimumStringLength: ElementBaseInput
+  maximumStringLength: positiveInt  _maximumStringLength: ElementBaseInput
+  code: CodeableConceptInput
+  expression: ExpressionInput
+  expectedValueSet: ReferenceInput
+  expectedUnitsValueSet: ReferenceInput
+  anyValueAllowed: Boolean  _anyValueAllowed: ElementBaseInput
+}
+
+type EvidenceVariableReadType {
+  EvidenceVariable(id: ID!): EvidenceVariable
+}
+
+type EvidenceVariableListType {
+  EvidenceVariableList(_filter: String
+    context: [token]
+    context_quantity: [quantity]
+    context_type: [token]
+    context_type_quantity: [composite]
+    context_type_value: [composite]
+    date: [date]
+    description: [String]
+    identifier: [token]
+    name: [String]
+    publisher: [String]
+    status: [token]
+    title: [String]
+    topic: [token]
+    url: [uri]
+    version: [token]
+    composed_of: [reference]
+    depends_on: [reference]
+    derived_from: [reference]
+    effective: [date]
+    predecessor: [reference]
+    successor: [reference]
+    topic: [token]
+    context: [token]
+    context_quantity: [quantity]
+    context_reference: [reference]
+    context_type: [token]
+    context_type_quantity: [composite]
+    context_type_value: [composite]
+    date: [date]
+    description: [String]
+    identifier: [token]
+    jurisdiction: [token]
+    name: [String]
+    publisher: [String]
+    status: [token]
+    title: [String]
+    url: [uri]
+    version: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): [EvidenceVariable]
+}
+
+type EvidenceVariableConnectionType {
+  EvidenceVariableConection(_filter: String
+    context: [token]
+    context_quantity: [quantity]
+    context_type: [token]
+    context_type_quantity: [composite]
+    context_type_value: [composite]
+    date: [date]
+    description: [String]
+    identifier: [token]
+    name: [String]
+    publisher: [String]
+    status: [token]
+    title: [String]
+    topic: [token]
+    url: [uri]
+    version: [token]
+    composed_of: [reference]
+    depends_on: [reference]
+    derived_from: [reference]
+    effective: [date]
+    predecessor: [reference]
+    successor: [reference]
+    topic: [token]
+    context: [token]
+    context_quantity: [quantity]
+    context_reference: [reference]
+    context_type: [token]
+    context_type_quantity: [composite]
+    context_type_value: [composite]
+    date: [date]
+    description: [String]
+    identifier: [token]
+    jurisdiction: [token]
+    name: [String]
+    publisher: [String]
+    status: [token]
+    title: [String]
+    url: [uri]
+    version: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): EvidenceVariableConnection
+}
+
+type EvidenceVariableConnection {
+  count: Int
+  offset: Int
+  pagesize: Int
+  first: ID
+  previous: ID
+  next: ID
+  last: ID
+  edges: [EvidenceVariableEdge]
+}
+
+type EvidenceVariableEdge {
+  mode: String
+  score: Float
+  resource: EvidenceVariable
+}
+
+type EvidenceVariableCreateType {
+  EvidenceVariableCreate(resource: EvidenceVariableInput): EvidenceVariableCreation
+}
+
+type EvidenceVariableCreation {
+  location: String
+  resource: EvidenceVariable
+  information: OperationOutcome
+}
+
+type EvidenceVariableUpdateType {
+  EvidenceVariableUpdate(id: ID, resource: EvidenceVariableInput): EvidenceVariableUpdate
+}
+
+type EvidenceVariableUpdate {
+  resource: EvidenceVariable
+  information: OperationOutcome
+}
+
+type EvidenceVariableDeleteType {
+  EvidenceVariableDelete(id: ID): EvidenceVariableDelete
+}
+
+type EvidenceVariableDelete {
+  information: OperationOutcome
+}
+

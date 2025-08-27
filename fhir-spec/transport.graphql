@@ -1,0 +1,206 @@
+# FHIR GraphQL Schema. Version 6.0.0-ballot3
+
+# import * from 'types.graphql'
+
+interface ITransport implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  instantiates: canonical  _instantiates: ElementBase
+  basedOn: [Reference]
+  partOf: [Reference]
+  status: code  _status: ElementBase
+  statusReason: CodeableConcept
+  code: CodeableConcept
+  description: String  _description: ElementBase
+  focus: Reference
+  subject: Reference
+  encounter: Reference
+  completionTime: dateTime  _completionTime: ElementBase
+  authoredOn: dateTime  _authoredOn: ElementBase
+  lastModified: dateTime  _lastModified: ElementBase
+  performer: [Reference]
+  location: Reference
+  insurance: [Reference]
+  note: [Annotation]
+  relevantHistory: [Reference]
+  to: Reference!
+  from: Reference!
+  reason: CodeableReference
+  history: Reference
+}
+
+type Transport implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  instantiates: canonical  _instantiates: ElementBase
+  basedOn: [Reference]
+  partOf: [Reference]
+  status: code  _status: ElementBase
+  statusReason: CodeableConcept
+  code: CodeableConcept
+  description: String  _description: ElementBase
+  focus: Reference
+  subject: Reference
+  encounter: Reference
+  completionTime: dateTime  _completionTime: ElementBase
+  authoredOn: dateTime  _authoredOn: ElementBase
+  lastModified: dateTime  _lastModified: ElementBase
+  performer: [Reference]
+  location: Reference
+  insurance: [Reference]
+  note: [Annotation]
+  relevantHistory: [Reference]
+  to: Reference!
+  from: Reference!
+  reason: CodeableReference
+  history: Reference
+}
+
+input TransportInput {
+  id: ID
+  meta: MetaInput
+  implicitRules: uri  _implicitRules: ElementBaseInput
+  language: code  _language: ElementBaseInput
+  text: NarrativeInput
+  contained: [ResourceInput]
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  identifier: [IdentifierInput]
+  instantiates: canonical  _instantiates: ElementBaseInput
+  basedOn: [ReferenceInput]
+  partOf: [ReferenceInput]
+  status: code  _status: ElementBaseInput
+  statusReason: CodeableConceptInput
+  code: CodeableConceptInput
+  description: String  _description: ElementBaseInput
+  focus: ReferenceInput
+  subject: ReferenceInput
+  encounter: ReferenceInput
+  completionTime: dateTime  _completionTime: ElementBaseInput
+  authoredOn: dateTime  _authoredOn: ElementBaseInput
+  lastModified: dateTime  _lastModified: ElementBaseInput
+  performer: [ReferenceInput]
+  location: ReferenceInput
+  insurance: [ReferenceInput]
+  note: [AnnotationInput]
+  relevantHistory: [ReferenceInput]
+  to: ReferenceInput!
+  from: ReferenceInput!
+  reason: CodeableReferenceInput
+  history: ReferenceInput
+}
+
+type TransportReadType {
+  Transport(id: ID!): Transport
+}
+
+type TransportListType {
+  TransportList(_filter: String
+    identifier: [token]
+    patient: [reference]
+    status: [token]
+    subject: [reference]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): [Transport]
+}
+
+type TransportConnectionType {
+  TransportConection(_filter: String
+    identifier: [token]
+    patient: [reference]
+    status: [token]
+    subject: [reference]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): TransportConnection
+}
+
+type TransportConnection {
+  count: Int
+  offset: Int
+  pagesize: Int
+  first: ID
+  previous: ID
+  next: ID
+  last: ID
+  edges: [TransportEdge]
+}
+
+type TransportEdge {
+  mode: String
+  score: Float
+  resource: Transport
+}
+
+type TransportCreateType {
+  TransportCreate(resource: TransportInput): TransportCreation
+}
+
+type TransportCreation {
+  location: String
+  resource: Transport
+  information: OperationOutcome
+}
+
+type TransportUpdateType {
+  TransportUpdate(id: ID, resource: TransportInput): TransportUpdate
+}
+
+type TransportUpdate {
+  resource: Transport
+  information: OperationOutcome
+}
+
+type TransportDeleteType {
+  TransportDelete(id: ID): TransportDelete
+}
+
+type TransportDelete {
+  information: OperationOutcome
+}
+

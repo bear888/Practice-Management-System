@@ -1,0 +1,269 @@
+# FHIR GraphQL Schema. Version 6.0.0-ballot3
+
+# import * from 'types.graphql'
+
+interface IInsuranceProduct implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  status: code  _status: ElementBase
+  type: [CodeableConcept]
+  name: String  _name: ElementBase
+  alias: [String]  _alias: [ElementBase]
+  period: Period
+  ownedBy: Reference
+  administeredBy: Reference
+  coverageArea: [Reference]
+  contact: [ExtendedContactDetail]
+  endpoint: [Reference]
+  network: [Reference]
+  coverage: [InsuranceProductCoverage]
+  related: [InsuranceProductRelated]
+}
+
+type InsuranceProduct implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  status: code  _status: ElementBase
+  type: [CodeableConcept]
+  name: String  _name: ElementBase
+  alias: [String]  _alias: [ElementBase]
+  period: Period
+  ownedBy: Reference
+  administeredBy: Reference
+  coverageArea: [Reference]
+  contact: [ExtendedContactDetail]
+  endpoint: [Reference]
+  network: [Reference]
+  coverage: [InsuranceProductCoverage]
+  related: [InsuranceProductRelated]
+}
+
+type InsuranceProductCoverage {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  type: CodeableConcept!
+  network: [Reference]
+  benefit: [InsuranceProductCoverageBenefit]!
+}
+
+type InsuranceProductCoverageBenefit {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  type: CodeableConcept!
+  requirement: String  _requirement: ElementBase
+  limit: [InsuranceProductCoverageBenefitLimit]
+}
+
+type InsuranceProductCoverageBenefitLimit {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  value: Quantity
+  code: CodeableConcept
+}
+
+type InsuranceProductRelated {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  product: Reference
+  relationship: CodeableConcept
+  period: Period
+}
+
+input InsuranceProductInput {
+  id: ID
+  meta: MetaInput
+  implicitRules: uri  _implicitRules: ElementBaseInput
+  language: code  _language: ElementBaseInput
+  text: NarrativeInput
+  contained: [ResourceInput]
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  identifier: [IdentifierInput]
+  status: code  _status: ElementBaseInput
+  type: [CodeableConceptInput]
+  name: String  _name: ElementBaseInput
+  alias: [String]  _alias: [ElementBaseInput]
+  period: PeriodInput
+  ownedBy: ReferenceInput
+  administeredBy: ReferenceInput
+  coverageArea: [ReferenceInput]
+  contact: [ExtendedContactDetailInput]
+  endpoint: [ReferenceInput]
+  network: [ReferenceInput]
+  coverage: [InsuranceProductCoverageInputInput]
+  related: [InsuranceProductRelatedInputInput]
+}
+
+input InsuranceProductCoverageInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  type: CodeableConceptInput!
+  network: [ReferenceInput]
+  benefit: [InsuranceProductCoverageInputBenefitInputInput]!
+}
+
+input InsuranceProductCoverageInputBenefitInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  type: CodeableConceptInput!
+  requirement: String  _requirement: ElementBaseInput
+  limit: [InsuranceProductCoverageInputBenefitInputLimitInputInput]
+}
+
+input InsuranceProductCoverageInputBenefitInputLimitInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  value: QuantityInput
+  code: CodeableConceptInput
+}
+
+input InsuranceProductRelatedInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  product: ReferenceInput
+  relationship: CodeableConceptInput
+  period: PeriodInput
+}
+
+type InsuranceProductReadType {
+  InsuranceProduct(id: ID!): InsuranceProduct
+}
+
+type InsuranceProductListType {
+  InsuranceProductList(_filter: String
+    administered_by: [reference]
+    contact_address: [String]
+    contact_address_city: [String]
+    contact_address_country: [String]
+    contact_address_postalcode: [String]
+    contact_address_state: [String]
+    contact_address_use: [token]
+    endpoint: [reference]
+    identifier: [token]
+    name: [String]
+    owned_by: [reference]
+    phonetic: [String]
+    status: [token]
+    type: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): [InsuranceProduct]
+}
+
+type InsuranceProductConnectionType {
+  InsuranceProductConection(_filter: String
+    administered_by: [reference]
+    contact_address: [String]
+    contact_address_city: [String]
+    contact_address_country: [String]
+    contact_address_postalcode: [String]
+    contact_address_state: [String]
+    contact_address_use: [token]
+    endpoint: [reference]
+    identifier: [token]
+    name: [String]
+    owned_by: [reference]
+    phonetic: [String]
+    status: [token]
+    type: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): InsuranceProductConnection
+}
+
+type InsuranceProductConnection {
+  count: Int
+  offset: Int
+  pagesize: Int
+  first: ID
+  previous: ID
+  next: ID
+  last: ID
+  edges: [InsuranceProductEdge]
+}
+
+type InsuranceProductEdge {
+  mode: String
+  score: Float
+  resource: InsuranceProduct
+}
+
+type InsuranceProductCreateType {
+  InsuranceProductCreate(resource: InsuranceProductInput): InsuranceProductCreation
+}
+
+type InsuranceProductCreation {
+  location: String
+  resource: InsuranceProduct
+  information: OperationOutcome
+}
+
+type InsuranceProductUpdateType {
+  InsuranceProductUpdate(id: ID, resource: InsuranceProductInput): InsuranceProductUpdate
+}
+
+type InsuranceProductUpdate {
+  resource: InsuranceProduct
+  information: OperationOutcome
+}
+
+type InsuranceProductDeleteType {
+  InsuranceProductDelete(id: ID): InsuranceProductDelete
+}
+
+type InsuranceProductDelete {
+  information: OperationOutcome
+}
+

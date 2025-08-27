@@ -1,0 +1,493 @@
+# FHIR GraphQL Schema. Version 6.0.0-ballot3
+
+# import * from 'types.graphql'
+
+interface IMolecularDefinition implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  description: markdown  _description: ElementBase
+  moleculeType: CodeableConcept
+  type: [CodeableConcept]
+  topology: [CodeableConcept]
+  member: [Reference]
+  location: [MolecularDefinitionLocation]
+  representation: [MolecularDefinitionRepresentation]
+}
+
+type MolecularDefinition implements IDomainResource & IResource & IBase {
+  id: ID
+  meta: Meta
+  implicitRules: uri  _implicitRules: ElementBase
+  language: code  _language: ElementBase
+  text: Narrative
+  contained: [Resource]
+  extension: [Extension]
+  modifierExtension: [Extension]
+  identifier: [Identifier]
+  description: markdown  _description: ElementBase
+  moleculeType: CodeableConcept
+  type: [CodeableConcept]
+  topology: [CodeableConcept]
+  member: [Reference]
+  location: [MolecularDefinitionLocation]
+  representation: [MolecularDefinitionRepresentation]
+}
+
+type MolecularDefinitionLocation {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  sequenceLocation: MolecularDefinitionLocationSequenceLocation
+  cytobandLocation: MolecularDefinitionLocationCytobandLocation
+}
+
+type MolecularDefinitionLocationSequenceLocation {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  sequenceContext: Reference!
+  coordinateInterval: MolecularDefinitionLocationSequenceLocationCoordinateInterval
+  strand: CodeableConcept
+}
+
+type MolecularDefinitionLocationSequenceLocationCoordinateInterval {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  coordinateSystem: MolecularDefinitionLocationSequenceLocationCoordinateIntervalCoordinateSystem
+  startQuantity: Quantity
+  startRange: Range
+  endQuantity: Quantity
+  endRange: Range
+}
+
+type MolecularDefinitionLocationSequenceLocationCoordinateIntervalCoordinateSystem {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  system: CodeableConcept
+  origin: CodeableConcept
+  normalizationMethod: CodeableConcept
+}
+
+type MolecularDefinitionLocationCytobandLocation {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  genomeAssembly: MolecularDefinitionLocationCytobandLocationGenomeAssembly!
+  cytobandInterval: MolecularDefinitionLocationCytobandLocationCytobandInterval!
+}
+
+type MolecularDefinitionLocationCytobandLocationGenomeAssembly {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  organism: CodeableConcept
+  build: CodeableConcept
+  accession: CodeableConcept
+  descriptionMarkdown: markdown  _descriptionMarkdown: ElementBase
+  descriptionString: String  _descriptionString: ElementBase
+}
+
+type MolecularDefinitionLocationCytobandLocationCytobandInterval {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  chromosome: CodeableConcept!
+  startCytoband: MolecularDefinitionLocationCytobandLocationCytobandIntervalStartCytoband
+  endCytoband: MolecularDefinitionLocationCytobandLocationCytobandIntervalEndCytoband
+}
+
+type MolecularDefinitionLocationCytobandLocationCytobandIntervalStartCytoband {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  armCode: code  _armCode: ElementBase
+  armString: String  _armString: ElementBase
+  regionCode: code  _regionCode: ElementBase
+  regionString: String  _regionString: ElementBase
+  bandCode: code  _bandCode: ElementBase
+  bandString: String  _bandString: ElementBase
+  subBandCode: code  _subBandCode: ElementBase
+  subBandString: String  _subBandString: ElementBase
+}
+
+type MolecularDefinitionLocationCytobandLocationCytobandIntervalEndCytoband {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  armCode: code  _armCode: ElementBase
+  armString: String  _armString: ElementBase
+  regionCode: code  _regionCode: ElementBase
+  regionString: String  _regionString: ElementBase
+  bandCode: code  _bandCode: ElementBase
+  bandString: String  _bandString: ElementBase
+  subBandCode: code  _subBandCode: ElementBase
+  subBandString: String  _subBandString: ElementBase
+}
+
+type MolecularDefinitionRepresentation {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  focus: CodeableConcept
+  code: [CodeableConcept]
+  literal: MolecularDefinitionRepresentationLiteral
+  resolvable: Reference
+  extracted: MolecularDefinitionRepresentationExtracted
+  repeated: MolecularDefinitionRepresentationRepeated
+  concatenated: MolecularDefinitionRepresentationConcatenated
+  relative: MolecularDefinitionRepresentationRelative
+}
+
+type MolecularDefinitionRepresentationLiteral {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  encoding: CodeableConcept
+  value: String  _value: ElementBase
+}
+
+type MolecularDefinitionRepresentationExtracted {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  startingMolecule: Reference!
+  coordinateInterval: MolecularDefinitionLocationSequenceLocationCoordinateInterval
+  reverseComplement: Boolean  _reverseComplement: ElementBase
+}
+
+type MolecularDefinitionRepresentationRepeated {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  sequenceMotif: Reference!
+  copyCount: Int  _copyCount: ElementBase
+}
+
+type MolecularDefinitionRepresentationConcatenated {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  sequenceElement: [MolecularDefinitionRepresentationConcatenatedSequenceElement]!
+}
+
+type MolecularDefinitionRepresentationConcatenatedSequenceElement {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  sequence: Reference!
+  ordinalIndex: Int  _ordinalIndex: ElementBase
+}
+
+type MolecularDefinitionRepresentationRelative {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  startingMolecule: Reference!
+  edit: [MolecularDefinitionRepresentationRelativeEdit]
+}
+
+type MolecularDefinitionRepresentationRelativeEdit {
+  id: String
+  extension: [Extension]
+  modifierExtension: [Extension]
+  editOrder: Int  _editOrder: ElementBase
+  coordinateInterval: MolecularDefinitionLocationSequenceLocationCoordinateInterval
+  replacementMolecule: Reference!
+  replacedMolecule: Reference
+}
+
+input MolecularDefinitionInput {
+  id: ID
+  meta: MetaInput
+  implicitRules: uri  _implicitRules: ElementBaseInput
+  language: code  _language: ElementBaseInput
+  text: NarrativeInput
+  contained: [ResourceInput]
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  identifier: [IdentifierInput]
+  description: markdown  _description: ElementBaseInput
+  moleculeType: CodeableConceptInput
+  type: [CodeableConceptInput]
+  topology: [CodeableConceptInput]
+  member: [ReferenceInput]
+  location: [MolecularDefinitionLocationInputInput]
+  representation: [MolecularDefinitionRepresentationInputInput]
+}
+
+input MolecularDefinitionLocationInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  sequenceLocation: MolecularDefinitionLocationInputSequenceLocationInputInput
+  cytobandLocation: MolecularDefinitionLocationInputCytobandLocationInputInput
+}
+
+input MolecularDefinitionLocationInputSequenceLocationInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  sequenceContext: ReferenceInput!
+  coordinateInterval: MolecularDefinitionLocationInputSequenceLocationInputCoordinateIntervalInputInput
+  strand: CodeableConceptInput
+}
+
+input MolecularDefinitionLocationInputSequenceLocationInputCoordinateIntervalInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  coordinateSystem: MolecularDefinitionLocationInputSequenceLocationInputCoordinateIntervalInputCoordinateSystemInputInput
+  startQuantity: QuantityInput
+  startRange: RangeInput
+  endQuantity: QuantityInput
+  endRange: RangeInput
+}
+
+input MolecularDefinitionLocationInputSequenceLocationInputCoordinateIntervalInputCoordinateSystemInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  system: CodeableConceptInput
+  origin: CodeableConceptInput
+  normalizationMethod: CodeableConceptInput
+}
+
+input MolecularDefinitionLocationInputCytobandLocationInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  genomeAssembly: MolecularDefinitionLocationInputCytobandLocationInputGenomeAssemblyInputInput!
+  cytobandInterval: MolecularDefinitionLocationInputCytobandLocationInputCytobandIntervalInputInput!
+}
+
+input MolecularDefinitionLocationInputCytobandLocationInputGenomeAssemblyInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  organism: CodeableConceptInput
+  build: CodeableConceptInput
+  accession: CodeableConceptInput
+  descriptionMarkdown: markdown  _descriptionMarkdown: ElementBaseInput
+  descriptionString: String  _descriptionString: ElementBaseInput
+}
+
+input MolecularDefinitionLocationInputCytobandLocationInputCytobandIntervalInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  chromosome: CodeableConceptInput!
+  startCytoband: MolecularDefinitionLocationInputCytobandLocationInputCytobandIntervalInputStartCytobandInputInput
+  endCytoband: MolecularDefinitionLocationInputCytobandLocationInputCytobandIntervalInputEndCytobandInputInput
+}
+
+input MolecularDefinitionLocationInputCytobandLocationInputCytobandIntervalInputStartCytobandInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  armCode: code  _armCode: ElementBaseInput
+  armString: String  _armString: ElementBaseInput
+  regionCode: code  _regionCode: ElementBaseInput
+  regionString: String  _regionString: ElementBaseInput
+  bandCode: code  _bandCode: ElementBaseInput
+  bandString: String  _bandString: ElementBaseInput
+  subBandCode: code  _subBandCode: ElementBaseInput
+  subBandString: String  _subBandString: ElementBaseInput
+}
+
+input MolecularDefinitionLocationInputCytobandLocationInputCytobandIntervalInputEndCytobandInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  armCode: code  _armCode: ElementBaseInput
+  armString: String  _armString: ElementBaseInput
+  regionCode: code  _regionCode: ElementBaseInput
+  regionString: String  _regionString: ElementBaseInput
+  bandCode: code  _bandCode: ElementBaseInput
+  bandString: String  _bandString: ElementBaseInput
+  subBandCode: code  _subBandCode: ElementBaseInput
+  subBandString: String  _subBandString: ElementBaseInput
+}
+
+input MolecularDefinitionRepresentationInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  focus: CodeableConceptInput
+  code: [CodeableConceptInput]
+  literal: MolecularDefinitionRepresentationInputLiteralInputInput
+  resolvable: ReferenceInput
+  extracted: MolecularDefinitionRepresentationInputExtractedInputInput
+  repeated: MolecularDefinitionRepresentationInputRepeatedInputInput
+  concatenated: MolecularDefinitionRepresentationInputConcatenatedInputInput
+  relative: MolecularDefinitionRepresentationInputRelativeInputInput
+}
+
+input MolecularDefinitionRepresentationInputLiteralInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  encoding: CodeableConceptInput
+  value: String  _value: ElementBaseInput
+}
+
+input MolecularDefinitionRepresentationInputExtractedInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  startingMolecule: ReferenceInput!
+  coordinateInterval: MolecularDefinitionLocationInputSequenceLocationInputCoordinateIntervalInputInput
+  reverseComplement: Boolean  _reverseComplement: ElementBaseInput
+}
+
+input MolecularDefinitionRepresentationInputRepeatedInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  sequenceMotif: ReferenceInput!
+  copyCount: Int  _copyCount: ElementBaseInput
+}
+
+input MolecularDefinitionRepresentationInputConcatenatedInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  sequenceElement: [MolecularDefinitionRepresentationInputConcatenatedInputSequenceElementInputInput]!
+}
+
+input MolecularDefinitionRepresentationInputConcatenatedInputSequenceElementInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  sequence: ReferenceInput!
+  ordinalIndex: Int  _ordinalIndex: ElementBaseInput
+}
+
+input MolecularDefinitionRepresentationInputRelativeInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  startingMolecule: ReferenceInput!
+  edit: [MolecularDefinitionRepresentationInputRelativeInputEditInputInput]
+}
+
+input MolecularDefinitionRepresentationInputRelativeInputEditInputInput {
+  id: String
+  extension: [ExtensionInput]
+  modifierExtension: [ExtensionInput]
+  editOrder: Int  _editOrder: ElementBaseInput
+  coordinateInterval: MolecularDefinitionLocationInputSequenceLocationInputCoordinateIntervalInputInput
+  replacementMolecule: ReferenceInput!
+  replacedMolecule: ReferenceInput
+}
+
+type MolecularDefinitionReadType {
+  MolecularDefinition(id: ID!): MolecularDefinition
+}
+
+type MolecularDefinitionListType {
+  MolecularDefinitionList(_filter: String
+    identifier: [token]
+    member: [reference]
+    moleculetype: [token]
+    topology: [token]
+    type: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): [MolecularDefinition]
+}
+
+type MolecularDefinitionConnectionType {
+  MolecularDefinitionConection(_filter: String
+    identifier: [token]
+    member: [reference]
+    moleculetype: [token]
+    topology: [token]
+    type: [token]
+    _text: [special]
+    _content: [special]
+    _filter: [special]
+    _has: [special]
+    _id: [token]
+    _in: [reference]
+    _language: [token]
+    _lastUpdated: [date]
+    _list: [special]
+    _profile: [reference]
+    _query: [special]
+    _security: [token]
+    _source: [uri]
+    _tag: [token]
+    _type: [special]
+    _sort: String
+    _count: Int
+    _cursor: String): MolecularDefinitionConnection
+}
+
+type MolecularDefinitionConnection {
+  count: Int
+  offset: Int
+  pagesize: Int
+  first: ID
+  previous: ID
+  next: ID
+  last: ID
+  edges: [MolecularDefinitionEdge]
+}
+
+type MolecularDefinitionEdge {
+  mode: String
+  score: Float
+  resource: MolecularDefinition
+}
+
+type MolecularDefinitionCreateType {
+  MolecularDefinitionCreate(resource: MolecularDefinitionInput): MolecularDefinitionCreation
+}
+
+type MolecularDefinitionCreation {
+  location: String
+  resource: MolecularDefinition
+  information: OperationOutcome
+}
+
+type MolecularDefinitionUpdateType {
+  MolecularDefinitionUpdate(id: ID, resource: MolecularDefinitionInput): MolecularDefinitionUpdate
+}
+
+type MolecularDefinitionUpdate {
+  resource: MolecularDefinition
+  information: OperationOutcome
+}
+
+type MolecularDefinitionDeleteType {
+  MolecularDefinitionDelete(id: ID): MolecularDefinitionDelete
+}
+
+type MolecularDefinitionDelete {
+  information: OperationOutcome
+}
+
