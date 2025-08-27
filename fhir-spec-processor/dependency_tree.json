@@ -1,0 +1,2546 @@
+[
+  {
+    "name": "Account",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ActivityDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ActorDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AdministrableProductDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AdverseEvent",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AllergyIntolerance",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Appointment",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AppointmentResponse",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ArtifactAssessment",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AuditEvent",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Basic",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Binary",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BiologicallyDerivedProduct",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BiologicallyDerivedProductDispense",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BodyStructure",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bundle",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CapabilityStatement",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CarePlan",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CareTeam",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ChargeItem",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ChargeItemDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Citation",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Claim",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ClaimResponse",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ClinicalAssessment",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ClinicalUseDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CodeSystem",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Communication",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CommunicationRequest",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CompartmentDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Composition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ConceptMap",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Condition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ConditionDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Consent",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Contract",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Coverage",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CoverageEligibilityRequest",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CoverageEligibilityResponse",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DetectedIssue",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Device",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DeviceAlert",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DeviceAssociation",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DeviceDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DeviceDispense",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DeviceMetric",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DeviceRequest",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DeviceUsage",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DiagnosticReport",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DocumentReference",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Encounter",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EncounterHistory",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Endpoint",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EnrollmentRequest",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EnrollmentResponse",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EpisodeOfCare",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EventDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Evidence",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EvidenceVariable",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ExampleScenario",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ExplanationOfBenefit",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FamilyMemberHistory",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Flag",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FormularyItem",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GenomicStudy",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Goal",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GraphDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Group",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GuidanceResponse",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HealthcareService",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ImagingSelection",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ImagingStudy",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Immunization",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ImmunizationEvaluation",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ImmunizationRecommendation",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ImplementationGuide",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ingredient",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "InsurancePlan",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "InsuranceProduct",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "InventoryItem",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "InventoryReport",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Invoice",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Library",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Linkage",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "List",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Location",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ManufacturedItemDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Measure",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MeasureReport",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Medication",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MedicationAdministration",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MedicationDispense",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MedicationKnowledge",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MedicationRequest",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MedicationStatement",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MedicinalProductDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MessageDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MessageHeader",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MolecularDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NamingSystem",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NutritionIntake",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NutritionOrder",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NutritionProduct",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Observation",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ObservationDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "OperationDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Organization",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "OrganizationAffiliation",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PackagedProductDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Parameters",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Patient",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PaymentNotice",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PaymentReconciliation",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Permission",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Person",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PersonalRelationship",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PlanDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Practitioner",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PractitionerRole",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Procedure",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Provenance",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Questionnaire",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "QuestionnaireResponse",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RegulatedAuthorization",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RelatedPerson",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RequestOrchestration",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Requirements",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ResearchStudy",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ResearchSubject",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RiskAssessment",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Schedule",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SearchParameter",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ServiceRequest",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Slot",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Specimen",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SpecimenDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "StructureDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "StructureMap",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Subscription",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SubscriptionStatus",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SubscriptionTopic",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Substance",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SubstanceDefinition",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SubstanceNucleicAcid",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SubstancePolymer",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SubstanceProtein",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SubstanceReferenceInformation",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SubstanceSourceMaterial",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SupplyDelivery",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SupplyRequest",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Task",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TerminologyCapabilities",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TestPlan",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TestReport",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TestScript",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Transport",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ValueSet",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "VerificationResult",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "VisionPrescription",
+    "children": [
+      {
+        "name": "CanonicalResource"
+      },
+      {
+        "name": "OperationOutcome",
+        "children": [
+          {
+            "name": "CanonicalResource"
+          }
+        ]
+      }
+    ]
+  }
+]
