@@ -1,162 +1,365 @@
 Level,Resource,Dependencies
-0,CanonicalResource,
-1,OperationOutcome,CanonicalResource
-2,Account,"CanonicalResource, OperationOutcome"
-2,ActivityDefinition,"CanonicalResource, OperationOutcome"
-2,ActorDefinition,"CanonicalResource, OperationOutcome"
-2,AdministrableProductDefinition,"CanonicalResource, OperationOutcome"
-2,AdverseEvent,"CanonicalResource, OperationOutcome"
-2,AllergyIntolerance,"CanonicalResource, OperationOutcome"
-2,Appointment,"CanonicalResource, OperationOutcome"
-2,AppointmentResponse,"CanonicalResource, OperationOutcome"
-2,ArtifactAssessment,"CanonicalResource, OperationOutcome"
-2,AuditEvent,"CanonicalResource, OperationOutcome"
-2,Basic,"CanonicalResource, OperationOutcome"
-2,Binary,"CanonicalResource, OperationOutcome"
-2,BiologicallyDerivedProduct,"CanonicalResource, OperationOutcome"
-2,BiologicallyDerivedProductDispense,"CanonicalResource, OperationOutcome"
-2,BodyStructure,"CanonicalResource, OperationOutcome"
-2,Bundle,"CanonicalResource, OperationOutcome"
-2,CapabilityStatement,"CanonicalResource, OperationOutcome"
-2,CarePlan,"CanonicalResource, OperationOutcome"
-2,CareTeam,"CanonicalResource, OperationOutcome"
-2,ChargeItem,"CanonicalResource, OperationOutcome"
-2,ChargeItemDefinition,"CanonicalResource, OperationOutcome"
-2,Citation,"CanonicalResource, OperationOutcome"
-2,Claim,"CanonicalResource, OperationOutcome"
-2,ClaimResponse,"CanonicalResource, OperationOutcome"
-2,ClinicalAssessment,"CanonicalResource, OperationOutcome"
-2,ClinicalUseDefinition,"CanonicalResource, OperationOutcome"
-2,CodeSystem,"CanonicalResource, OperationOutcome"
-2,Communication,"CanonicalResource, OperationOutcome"
-2,CommunicationRequest,"CanonicalResource, OperationOutcome"
-2,CompartmentDefinition,"CanonicalResource, OperationOutcome"
-2,Composition,"CanonicalResource, OperationOutcome"
-2,ConceptMap,"CanonicalResource, OperationOutcome"
-2,Condition,"CanonicalResource, OperationOutcome"
-2,ConditionDefinition,"CanonicalResource, OperationOutcome"
-2,Consent,"CanonicalResource, OperationOutcome"
-2,Contract,"CanonicalResource, OperationOutcome"
-2,Coverage,"CanonicalResource, OperationOutcome"
-2,CoverageEligibilityRequest,"CanonicalResource, OperationOutcome"
-2,CoverageEligibilityResponse,"CanonicalResource, OperationOutcome"
-2,DetectedIssue,"CanonicalResource, OperationOutcome"
-2,Device,"CanonicalResource, OperationOutcome"
-2,DeviceAlert,"CanonicalResource, OperationOutcome"
-2,DeviceAssociation,"CanonicalResource, OperationOutcome"
-2,DeviceDefinition,"CanonicalResource, OperationOutcome"
-2,DeviceDispense,"CanonicalResource, OperationOutcome"
-2,DeviceMetric,"CanonicalResource, OperationOutcome"
-2,DeviceRequest,"CanonicalResource, OperationOutcome"
-2,DeviceUsage,"CanonicalResource, OperationOutcome"
-2,DiagnosticReport,"CanonicalResource, OperationOutcome"
-2,DocumentReference,"CanonicalResource, OperationOutcome"
-2,Encounter,"CanonicalResource, OperationOutcome"
-2,EncounterHistory,"CanonicalResource, OperationOutcome"
-2,Endpoint,"CanonicalResource, OperationOutcome"
-2,EnrollmentRequest,"CanonicalResource, OperationOutcome"
-2,EnrollmentResponse,"CanonicalResource, OperationOutcome"
-2,EpisodeOfCare,"CanonicalResource, OperationOutcome"
-2,EventDefinition,"CanonicalResource, OperationOutcome"
-2,Evidence,"CanonicalResource, OperationOutcome"
-2,EvidenceVariable,"CanonicalResource, OperationOutcome"
-2,ExampleScenario,"CanonicalResource, OperationOutcome"
-2,ExplanationOfBenefit,"CanonicalResource, OperationOutcome"
-2,FamilyMemberHistory,"CanonicalResource, OperationOutcome"
-2,Flag,"CanonicalResource, OperationOutcome"
-2,FormularyItem,"CanonicalResource, OperationOutcome"
-2,GenomicStudy,"CanonicalResource, OperationOutcome"
-2,Goal,"CanonicalResource, OperationOutcome"
-2,GraphDefinition,"CanonicalResource, OperationOutcome"
-2,Group,"CanonicalResource, OperationOutcome"
-2,GuidanceResponse,"CanonicalResource, OperationOutcome"
-2,HealthcareService,"CanonicalResource, OperationOutcome"
-2,ImagingSelection,"CanonicalResource, OperationOutcome"
-2,ImagingStudy,"CanonicalResource, OperationOutcome"
-2,Immunization,"CanonicalResource, OperationOutcome"
-2,ImmunizationEvaluation,"CanonicalResource, OperationOutcome"
-2,ImmunizationRecommendation,"CanonicalResource, OperationOutcome"
-2,ImplementationGuide,"CanonicalResource, OperationOutcome"
-2,Ingredient,"CanonicalResource, OperationOutcome"
-2,InsurancePlan,"CanonicalResource, OperationOutcome"
-2,InsuranceProduct,"CanonicalResource, OperationOutcome"
-2,InventoryItem,"CanonicalResource, OperationOutcome"
-2,InventoryReport,"CanonicalResource, OperationOutcome"
-2,Invoice,"CanonicalResource, OperationOutcome"
-2,Library,"CanonicalResource, OperationOutcome"
-2,Linkage,"CanonicalResource, OperationOutcome"
-2,List,"CanonicalResource, OperationOutcome"
-2,Location,"CanonicalResource, OperationOutcome"
-2,ManufacturedItemDefinition,"CanonicalResource, OperationOutcome"
-2,Measure,"CanonicalResource, OperationOutcome"
-2,MeasureReport,"CanonicalResource, OperationOutcome"
-2,Medication,"CanonicalResource, OperationOutcome"
-2,MedicationAdministration,"CanonicalResource, OperationOutcome"
-2,MedicationDispense,"CanonicalResource, OperationOutcome"
-2,MedicationKnowledge,"CanonicalResource, OperationOutcome"
-2,MedicationRequest,"CanonicalResource, OperationOutcome"
-2,MedicationStatement,"CanonicalResource, OperationOutcome"
-2,MedicinalProductDefinition,"CanonicalResource, OperationOutcome"
-2,MessageDefinition,"CanonicalResource, OperationOutcome"
-2,MessageHeader,"CanonicalResource, OperationOutcome"
-2,MolecularDefinition,"CanonicalResource, OperationOutcome"
-2,NamingSystem,"CanonicalResource, OperationOutcome"
-2,NutritionIntake,"CanonicalResource, OperationOutcome"
-2,NutritionOrder,"CanonicalResource, OperationOutcome"
-2,NutritionProduct,"CanonicalResource, OperationOutcome"
-2,Observation,"CanonicalResource, OperationOutcome"
-2,ObservationDefinition,"CanonicalResource, OperationOutcome"
-2,OperationDefinition,"CanonicalResource, OperationOutcome"
-2,Organization,"CanonicalResource, OperationOutcome"
-2,OrganizationAffiliation,"CanonicalResource, OperationOutcome"
-2,PackagedProductDefinition,"CanonicalResource, OperationOutcome"
-2,Parameters,"CanonicalResource, OperationOutcome"
-2,Patient,"CanonicalResource, OperationOutcome"
-2,PaymentNotice,"CanonicalResource, OperationOutcome"
-2,PaymentReconciliation,"CanonicalResource, OperationOutcome"
-2,Permission,"CanonicalResource, OperationOutcome"
-2,Person,"CanonicalResource, OperationOutcome"
-2,PersonalRelationship,"CanonicalResource, OperationOutcome"
-2,PlanDefinition,"CanonicalResource, OperationOutcome"
-2,Practitioner,"CanonicalResource, OperationOutcome"
-2,PractitionerRole,"CanonicalResource, OperationOutcome"
-2,Procedure,"CanonicalResource, OperationOutcome"
-2,Provenance,"CanonicalResource, OperationOutcome"
-2,Questionnaire,"CanonicalResource, OperationOutcome"
-2,QuestionnaireResponse,"CanonicalResource, OperationOutcome"
-2,RegulatedAuthorization,"CanonicalResource, OperationOutcome"
-2,RelatedPerson,"CanonicalResource, OperationOutcome"
-2,RequestOrchestration,"CanonicalResource, OperationOutcome"
-2,Requirements,"CanonicalResource, OperationOutcome"
-2,ResearchStudy,"CanonicalResource, OperationOutcome"
-2,ResearchSubject,"CanonicalResource, OperationOutcome"
-2,RiskAssessment,"CanonicalResource, OperationOutcome"
-2,Schedule,"CanonicalResource, OperationOutcome"
-2,SearchParameter,"CanonicalResource, OperationOutcome"
-2,ServiceRequest,"CanonicalResource, OperationOutcome"
-2,Slot,"CanonicalResource, OperationOutcome"
-2,Specimen,"CanonicalResource, OperationOutcome"
-2,SpecimenDefinition,"CanonicalResource, OperationOutcome"
-2,StructureDefinition,"CanonicalResource, OperationOutcome"
-2,StructureMap,"CanonicalResource, OperationOutcome"
-2,Subscription,"CanonicalResource, OperationOutcome"
-2,SubscriptionStatus,"CanonicalResource, OperationOutcome"
-2,SubscriptionTopic,"CanonicalResource, OperationOutcome"
-2,Substance,"CanonicalResource, OperationOutcome"
-2,SubstanceDefinition,"CanonicalResource, OperationOutcome"
-2,SubstanceNucleicAcid,"CanonicalResource, OperationOutcome"
-2,SubstancePolymer,"CanonicalResource, OperationOutcome"
-2,SubstanceProtein,"CanonicalResource, OperationOutcome"
-2,SubstanceReferenceInformation,"CanonicalResource, OperationOutcome"
-2,SubstanceSourceMaterial,"CanonicalResource, OperationOutcome"
-2,SupplyDelivery,"CanonicalResource, OperationOutcome"
-2,SupplyRequest,"CanonicalResource, OperationOutcome"
-2,Task,"CanonicalResource, OperationOutcome"
-2,TerminologyCapabilities,"CanonicalResource, OperationOutcome"
-2,TestPlan,"CanonicalResource, OperationOutcome"
-2,TestReport,"CanonicalResource, OperationOutcome"
-2,TestScript,"CanonicalResource, OperationOutcome"
-2,Transport,"CanonicalResource, OperationOutcome"
-2,ValueSet,"CanonicalResource, OperationOutcome"
-2,VerificationResult,"CanonicalResource, OperationOutcome"
-2,VisionPrescription,"CanonicalResource, OperationOutcome"
+0,AccountInput,
+0,ActivityDefinitionInput,
+0,ActorDefinitionInput,
+0,Address,
+0,AdministrableProductDefinitionInput,
+0,AdverseEventInput,
+0,Age,
+0,AllergyIntoleranceInput,
+0,Annotation,
+0,AppointmentInput,
+0,AppointmentResponseInput,
+0,ArtifactAssessmentInput,
+0,Attachment,
+0,AuditEventInput,
+0,Availability,
+0,Base,
+0,BasicInput,
+0,BinaryInput,
+0,BiologicallyDerivedProductDispenseInput,
+0,BiologicallyDerivedProductInput,
+0,BodyStructureInput,
+0,BundleInput,
+0,CapabilityStatementInput,
+0,CarePlanInput,
+0,CareTeamInput,
+0,ChargeItemDefinitionInput,
+0,ChargeItemInput,
+0,CitationInput,
+0,ClaimInput,
+0,ClaimResponseInput,
+0,ClinicalAssessmentInput,
+0,ClinicalUseDefinitionInput,
+0,CodeSystemInput,
+0,CodeableConcept,
+0,CodeableReference,
+0,Coding,
+0,CommunicationInput,
+0,CommunicationRequestInput,
+0,CompartmentDefinitionInput,
+0,CompositionInput,
+0,ConceptMapInput,
+0,ConditionDefinitionInput,
+0,ConditionInput,
+0,ConsentInput,
+0,ContactDetail,
+0,ContactPoint,
+0,ContractInput,
+0,Count,
+0,CoverageEligibilityRequestInput,
+0,CoverageEligibilityResponseInput,
+0,CoverageInput,
+0,DataRequirement,
+0,DetectedIssueInput,
+0,DeviceAlertInput,
+0,DeviceAssociationInput,
+0,DeviceDefinitionInput,
+0,DeviceDispenseInput,
+0,DeviceInput,
+0,DeviceMetricInput,
+0,DeviceRequestInput,
+0,DeviceUsageInput,
+0,DiagnosticReportInput,
+0,Distance,
+0,DocumentReferenceInput,
+0,Dosage,
+0,Duration,
+0,ElementBase,
+0,ElementDefinition,
+0,EncounterHistoryInput,
+0,EncounterInput,
+0,EndpointInput,
+0,EnrollmentRequestInput,
+0,EnrollmentResponseInput,
+0,EpisodeOfCareInput,
+0,EventDefinitionInput,
+0,EvidenceInput,
+0,EvidenceVariableInput,
+0,ExampleScenarioInput,
+0,ExplanationOfBenefitInput,
+0,Expression,
+0,ExtendedContactDetail,
+0,Extension,
+0,FamilyMemberHistoryInput,
+0,FlagInput,
+0,FormularyItemInput,
+0,GenomicStudyInput,
+0,GoalInput,
+0,GraphDefinitionInput,
+0,GroupInput,
+0,GuidanceResponseInput,
+0,HealthcareServiceInput,
+0,HumanName,
+0,Identifier,
+0,ImagingSelectionInput,
+0,ImagingStudyInput,
+0,ImmunizationEvaluationInput,
+0,ImmunizationInput,
+0,ImmunizationRecommendationInput,
+0,ImplementationGuideInput,
+0,IngredientInput,
+0,InsurancePlanInput,
+0,InsuranceProductInput,
+0,InventoryItemInput,
+0,InventoryReportInput,
+0,InvoiceInput,
+0,LibraryInput,
+0,LinkageInput,
+0,ListInput,
+0,LocationInput,
+0,ManufacturedItemDefinitionInput,
+0,MarketingStatus,
+0,MeasureInput,
+0,MeasureReportInput,
+0,MedicationAdministrationInput,
+0,MedicationDispenseInput,
+0,MedicationInput,
+0,MedicationKnowledgeInput,
+0,MedicationRequestInput,
+0,MedicationStatementInput,
+0,MedicinalProductDefinitionInput,
+0,MessageDefinitionInput,
+0,MessageHeaderInput,
+0,Meta,
+0,MolecularDefinitionInput,
+0,MonetaryComponent,
+0,Money,
+0,NamingSystemInput,
+0,Narrative,
+0,NutritionIntakeInput,
+0,NutritionOrderInput,
+0,NutritionProductInput,
+0,ObservationDefinitionInput,
+0,ObservationInput,
+0,OperationDefinitionInput,
+0,OperationOutcomeInput,
+0,OrganizationAffiliationInput,
+0,OrganizationInput,
+0,PackagedProductDefinitionInput,
+0,ParameterDefinition,
+0,ParametersInput,
+0,PatientInput,
+0,PaymentNoticeInput,
+0,PaymentReconciliationInput,
+0,Period,
+0,PermissionInput,
+0,PersonInput,
+0,PersonalRelationshipInput,
+0,PlanDefinitionInput,
+0,PractitionerInput,
+0,PractitionerRoleInput,
+0,ProcedureInput,
+0,ProductShelfLife,
+0,ProvenanceInput,
+0,Quantity,
+0,QuestionnaireInput,
+0,QuestionnaireResponseInput,
+0,Range,
+0,Ratio,
+0,RatioRange,
+0,Reference,
+0,RegulatedAuthorizationInput,
+0,RelatedArtifact,
+0,RelatedPersonInput,
+0,RelativeTime,
+0,RequestOrchestrationInput,
+0,RequirementsInput,
+0,ResearchStudyInput,
+0,ResearchSubjectInput,
+0,Resource,
+0,RiskAssessmentInput,
+0,SampledData,
+0,ScheduleInput,
+0,SearchParameterInput,
+0,ServiceRequestInput,
+0,Signature,
+0,SlotInput,
+0,SpecimenDefinitionInput,
+0,SpecimenInput,
+0,StructureDefinitionInput,
+0,StructureMapInput,
+0,SubscriptionInput,
+0,SubscriptionStatusInput,
+0,SubscriptionTopicInput,
+0,SubstanceDefinitionInput,
+0,SubstanceInput,
+0,SubstanceNucleicAcidInput,
+0,SubstancePolymerInput,
+0,SubstanceProteinInput,
+0,SubstanceReferenceInformationInput,
+0,SubstanceSourceMaterialInput,
+0,SupplyDeliveryInput,
+0,SupplyRequestInput,
+0,TerminologyCapabilitiesInput,
+0,TestPlanInput,
+0,TestReportInput,
+0,TestScriptInput,
+0,Timing,
+0,TransportInput,
+0,TriggerDefinition,
+0,UsageContext,
+0,ValueSetInput,
+0,VerificationResultInput,
+0,VirtualServiceDetail,
+0,VisionPrescriptionInput,
+1,OperationOutcome,"CodeableConcept, ElementBase, Extension, Meta, Narrative, OperationOutcomeInput, Resource"
+2,Account,"AccountInput, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, Period, Reference, Resource"
+2,ActivityDefinition,"ActivityDefinitionInput, Age, CodeableConcept, CodeableReference, Coding, ContactDetail, Dosage, Duration, ElementBase, Expression, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Reference, RelatedArtifact, Resource, Timing, UsageContext"
+2,ActorDefinition,"ActorDefinitionInput, CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, UsageContext"
+2,AdministrableProductDefinition,"AdministrableProductDefinitionInput, Attachment, CodeableConcept, Duration, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Ratio, Reference, Resource"
+2,AdverseEvent,"AdverseEventInput, Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,AllergyIntolerance,"Age, AllergyIntoleranceInput, Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Range, Reference, Resource"
+2,Appointment,"Annotation, AppointmentInput, CodeableConcept, CodeableReference, Coding, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource, VirtualServiceDetail"
+2,AppointmentResponse,"AppointmentResponseInput, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,ArtifactAssessment,"ArtifactAssessmentInput, Attachment, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,AuditEvent,"AuditEventInput, CodeableConcept, Coding, ElementBase, Extension, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Ratio, Reference, Resource"
+2,Basic,"BasicInput, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,Binary,"BinaryInput, ElementBase, Meta, OperationOutcome, Reference"
+2,BiologicallyDerivedProduct,"Attachment, BiologicallyDerivedProductInput, CodeableConcept, Coding, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Ratio, Reference, Resource"
+2,BiologicallyDerivedProductDispense,"Annotation, BiologicallyDerivedProductDispenseInput, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,BodyStructure,"Attachment, BodyStructureInput, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,Bundle,"BundleInput, ElementBase, Extension, Identifier, Meta, OperationOutcome, Resource, Signature"
+2,CapabilityStatement,"CapabilityStatementInput, CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource, UsageContext"
+2,CarePlan,"Annotation, CarePlanInput, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,CareTeam,"Annotation, CareTeamInput, CodeableConcept, CodeableReference, ContactPoint, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource, Timing"
+2,ChargeItem,"Annotation, ChargeItemInput, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, MonetaryComponent, Narrative, OperationOutcome, Period, Quantity, Reference, Resource, Timing"
+2,ChargeItemDefinition,"ChargeItemDefinitionInput, CodeableConcept, Coding, ContactDetail, ElementBase, Expression, Extension, Identifier, Meta, MonetaryComponent, Narrative, OperationOutcome, Period, Reference, RelatedArtifact, Resource, UsageContext"
+2,Citation,"Annotation, Attachment, CitationInput, CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource, UsageContext"
+2,Claim,"Address, Attachment, ClaimInput, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,ClaimResponse,"Address, Attachment, ClaimResponseInput, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,ClinicalAssessment,"Annotation, ClinicalAssessmentInput, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,ClinicalUseDefinition,"ClinicalUseDefinitionInput, CodeableConcept, CodeableReference, ElementBase, Expression, Extension, Identifier, Meta, Narrative, OperationOutcome, Range, Reference, Resource"
+2,CodeSystem,"CodeSystemInput, CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, RelatedArtifact, Resource, UsageContext"
+2,Communication,"Annotation, Attachment, CodeableConcept, CodeableReference, CommunicationInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,CommunicationRequest,"Annotation, Attachment, CodeableConcept, CodeableReference, CommunicationRequestInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,CompartmentDefinition,"Coding, CompartmentDefinitionInput, ContactDetail, ElementBase, Extension, Meta, Narrative, OperationOutcome, Resource, UsageContext"
+2,Composition,"Annotation, Attachment, CodeableConcept, CodeableReference, CompositionInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource, UsageContext"
+2,ConceptMap,"CodeableConcept, Coding, ConceptMapInput, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, RelatedArtifact, Resource, UsageContext"
+2,Condition,"Age, Annotation, CodeableConcept, CodeableReference, ConditionInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Range, Reference, Resource"
+2,ConditionDefinition,"CodeableConcept, Coding, ConditionDefinitionInput, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource, UsageContext"
+2,Consent,"Attachment, CodeableConcept, Coding, ConsentInput, ElementBase, Expression, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,Contract,"Annotation, Attachment, CodeableConcept, CodeableReference, Coding, ContractInput, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, Period, Quantity, Reference, Resource, Signature, Timing"
+2,Coverage,"CodeableConcept, CoverageInput, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,CoverageEligibilityRequest,"CodeableConcept, CoverageEligibilityRequestInput, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,CoverageEligibilityResponse,"CodeableConcept, CoverageEligibilityResponseInput, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, Period, Reference, Resource"
+2,DetectedIssue,"Annotation, CodeableConcept, DetectedIssueInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource, Timing"
+2,Device,"Annotation, Attachment, CodeableConcept, CodeableReference, ContactPoint, DeviceInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Range, Reference, Resource"
+2,DeviceAlert,"CodeableConcept, CodeableReference, Coding, DeviceAlertInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Range, Reference, Resource"
+2,DeviceAssociation,"CodeableConcept, DeviceAssociationInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,DeviceDefinition,"Annotation, Attachment, CodeableConcept, CodeableReference, Coding, ContactDetail, DeviceDefinitionInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, ProductShelfLife, Quantity, Range, Reference, RelatedArtifact, Resource, UsageContext"
+2,DeviceDispense,"Annotation, CodeableConcept, CodeableReference, DeviceDispenseInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,DeviceMetric,"CodeableConcept, DeviceMetricInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,DeviceRequest,"Annotation, CodeableConcept, CodeableReference, DeviceRequestInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Reference, Resource, Timing"
+2,DeviceUsage,"Annotation, CodeableConcept, CodeableReference, DeviceUsageInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource, Timing"
+2,DiagnosticReport,"Annotation, Attachment, CodeableConcept, CodeableReference, DiagnosticReportInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, RelatedArtifact, Resource"
+2,DocumentReference,"Attachment, CodeableConcept, CodeableReference, Coding, DocumentReferenceInput, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,Encounter,"CodeableConcept, CodeableReference, Duration, ElementBase, EncounterInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource, VirtualServiceDetail"
+2,EncounterHistory,"CodeableConcept, CodeableReference, Duration, ElementBase, EncounterHistoryInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,Endpoint,"Availability, CodeableConcept, ContactPoint, ElementBase, EndpointInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,EnrollmentRequest,"ElementBase, EnrollmentRequestInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,EnrollmentResponse,"ElementBase, EnrollmentResponseInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,EpisodeOfCare,"CodeableConcept, CodeableReference, ElementBase, EpisodeOfCareInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,EventDefinition,"CodeableConcept, Coding, ContactDetail, ElementBase, EventDefinitionInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, RelatedArtifact, Resource, TriggerDefinition, UsageContext"
+2,Evidence,"Annotation, Attachment, CodeableConcept, Coding, ContactDetail, ElementBase, EvidenceInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Range, Reference, Resource, UsageContext"
+2,EvidenceVariable,"Annotation, Attachment, CodeableConcept, CodeableReference, Coding, ContactDetail, ElementBase, EvidenceVariableInput, Expression, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Reference, RelativeTime, Resource, UsageContext"
+2,ExampleScenario,"CodeableConcept, Coding, ContactDetail, ElementBase, ExampleScenarioInput, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource, UsageContext"
+2,ExplanationOfBenefit,"Address, Attachment, CodeableConcept, CodeableReference, Coding, ElementBase, ExplanationOfBenefitInput, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,FamilyMemberHistory,"Age, Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, FamilyMemberHistoryInput, Identifier, Meta, Narrative, OperationOutcome, Period, Range, Reference, Resource"
+2,Flag,"CodeableConcept, ElementBase, Extension, FlagInput, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource"
+2,FormularyItem,"CodeableConcept, ElementBase, Extension, FormularyItemInput, Identifier, Meta, Narrative, OperationOutcome, Resource"
+2,GenomicStudy,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, GenomicStudyInput, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,Goal,"Annotation, CodeableConcept, Duration, ElementBase, Extension, GoalInput, Identifier, Meta, Narrative, OperationOutcome, Quantity, Range, Ratio, Reference, Resource"
+2,GraphDefinition,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, GraphDefinitionInput, Identifier, Meta, Narrative, OperationOutcome, Resource, UsageContext"
+2,Group,"CodeableConcept, Coding, ContactDetail, Duration, ElementBase, Expression, Extension, GroupInput, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Reference, RelativeTime, Resource, UsageContext"
+2,GuidanceResponse,"Annotation, CodeableConcept, CodeableReference, DataRequirement, ElementBase, Extension, GuidanceResponseInput, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,HealthcareService,"Attachment, Availability, CodeableConcept, ElementBase, ExtendedContactDetail, Extension, HealthcareServiceInput, Identifier, Meta, Narrative, OperationOutcome, Quantity, Range, Reference, Resource"
+2,ImagingSelection,"CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, ImagingSelectionInput, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,ImagingStudy,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, ImagingStudyInput, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,Immunization,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, ImmunizationInput, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,ImmunizationEvaluation,"CodeableConcept, ElementBase, Extension, Identifier, ImmunizationEvaluationInput, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,ImmunizationRecommendation,"CodeableConcept, ElementBase, Extension, Identifier, ImmunizationRecommendationInput, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,ImplementationGuide,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, ImplementationGuideInput, Meta, Narrative, OperationOutcome, Reference, Resource, UsageContext"
+2,Ingredient,"CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, IngredientInput, Meta, Narrative, OperationOutcome, Quantity, Ratio, RatioRange, Reference, Resource"
+2,InsurancePlan,"CodeableConcept, ElementBase, Extension, Identifier, InsurancePlanInput, Meta, Money, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,InsuranceProduct,"CodeableConcept, ElementBase, ExtendedContactDetail, Extension, Identifier, InsuranceProductInput, Meta, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,InventoryItem,"Address, Annotation, CodeableConcept, Coding, Duration, ElementBase, Extension, Identifier, InventoryItemInput, Meta, Narrative, OperationOutcome, Quantity, Range, Ratio, Reference, Resource"
+2,InventoryReport,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, InventoryReportInput, Meta, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,Invoice,"Annotation, CodeableConcept, ElementBase, Extension, Identifier, InvoiceInput, Meta, MonetaryComponent, Money, Narrative, OperationOutcome, Period, Reference, Resource"
+2,Library,"Attachment, CodeableConcept, Coding, ContactDetail, DataRequirement, ElementBase, Extension, Identifier, LibraryInput, Meta, Narrative, OperationOutcome, ParameterDefinition, Period, Reference, RelatedArtifact, Resource, UsageContext"
+2,Linkage,"ElementBase, Extension, LinkageInput, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,List,"Annotation, CodeableConcept, ElementBase, Extension, Identifier, ListInput, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,Location,"Address, Availability, CodeableConcept, Coding, ElementBase, ExtendedContactDetail, Extension, Identifier, LocationInput, Meta, Narrative, OperationOutcome, Reference, Resource, VirtualServiceDetail"
+2,ManufacturedItemDefinition,"Attachment, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, ManufacturedItemDefinitionInput, MarketingStatus, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,Measure,"CodeableConcept, Coding, ContactDetail, ElementBase, Expression, Extension, Identifier, MeasureInput, Meta, Narrative, OperationOutcome, Period, Quantity, Reference, RelatedArtifact, Resource, UsageContext"
+2,MeasureReport,"CodeableConcept, Duration, ElementBase, Extension, Identifier, MeasureReportInput, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Reference, Resource"
+2,Medication,"CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, MedicationInput, Meta, Narrative, OperationOutcome, Quantity, Ratio, Reference, Resource"
+2,MedicationAdministration,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, MedicationAdministrationInput, Meta, Narrative, OperationOutcome, Period, Quantity, Ratio, Reference, Resource, Timing"
+2,MedicationDispense,"Annotation, CodeableConcept, CodeableReference, Dosage, ElementBase, Extension, Identifier, MedicationDispenseInput, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource"
+2,MedicationKnowledge,"Annotation, Attachment, CodeableConcept, CodeableReference, ContactDetail, Dosage, Duration, ElementBase, Extension, Identifier, MedicationKnowledgeInput, Meta, Money, Narrative, OperationOutcome, Period, Quantity, Range, Ratio, Reference, Resource"
+2,MedicationRequest,"Annotation, CodeableConcept, CodeableReference, Dosage, Duration, ElementBase, Extension, Identifier, MedicationRequestInput, Meta, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,MedicationStatement,"Annotation, CodeableConcept, CodeableReference, Dosage, ElementBase, Extension, Identifier, MedicationStatementInput, Meta, Narrative, OperationOutcome, Period, Reference, Resource, Timing"
+2,MedicinalProductDefinition,"Attachment, CodeableConcept, CodeableReference, Coding, ElementBase, Extension, Identifier, MarketingStatus, MedicinalProductDefinitionInput, Meta, Narrative, OperationOutcome, Period, Quantity, Reference, Resource"
+2,MessageDefinition,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, MessageDefinitionInput, Meta, Narrative, OperationOutcome, Resource, UsageContext"
+2,MessageHeader,"CodeableConcept, Coding, ContactPoint, ElementBase, Extension, Identifier, MessageHeaderInput, Meta, Narrative, OperationOutcome, Reference, Resource"
+2,MolecularDefinition,"CodeableConcept, ElementBase, Extension, Identifier, Meta, MolecularDefinitionInput, Narrative, OperationOutcome, Quantity, Range, Reference, Resource"
+2,NamingSystem,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, NamingSystemInput, Narrative, OperationOutcome, Period, RelatedArtifact, Resource, UsageContext"
+2,NutritionIntake,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, NutritionIntakeInput, OperationOutcome, Period, Quantity, Ratio, Reference, Resource, Timing"
+2,NutritionOrder,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, NutritionOrderInput, OperationOutcome, Quantity, Ratio, Reference, Resource, Timing"
+2,NutritionProduct,"Annotation, Attachment, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, NutritionProductInput, OperationOutcome, Quantity, Ratio, Reference, Resource"
+2,Observation,"Annotation, Attachment, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, ObservationInput, OperationOutcome, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing"
+2,ObservationDefinition,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, ObservationDefinitionInput, OperationOutcome, Period, Range, Reference, Resource, UsageContext"
+2,OperationDefinition,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationDefinitionInput, OperationOutcome, Resource, UsageContext"
+2,Organization,"CodeableConcept, ElementBase, ExtendedContactDetail, Extension, Identifier, Meta, Narrative, OperationOutcome, OrganizationInput, Period, Reference, Resource"
+2,OrganizationAffiliation,"CodeableConcept, ElementBase, ExtendedContactDetail, Extension, Identifier, Meta, Narrative, OperationOutcome, OrganizationAffiliationInput, Period, Reference, Resource"
+2,PackagedProductDefinition,"Attachment, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, MarketingStatus, Meta, Narrative, OperationOutcome, PackagedProductDefinitionInput, ProductShelfLife, Quantity, Reference, Resource"
+2,Parameters,"Address, Age, Annotation, Attachment, Availability, CodeableConcept, Coding, ContactDetail, ContactPoint, Count, DataRequirement, Distance, Dosage, Duration, ElementBase, Expression, ExtendedContactDetail, Extension, HumanName, Identifier, Meta, Money, OperationOutcome, ParameterDefinition, ParametersInput, Period, Quantity, Range, Ratio, RatioRange, RelatedArtifact, Resource, SampledData, Signature, Timing, TriggerDefinition, UsageContext"
+2,Patient,"Address, Attachment, CodeableConcept, ContactPoint, ElementBase, Extension, HumanName, Identifier, Meta, Narrative, OperationOutcome, PatientInput, Period, Reference, Resource"
+2,PaymentNotice,"CodeableConcept, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, PaymentNoticeInput, Reference, Resource"
+2,PaymentReconciliation,"CodeableConcept, ElementBase, Extension, Identifier, Meta, Money, Narrative, OperationOutcome, PaymentReconciliationInput, Period, Reference, Resource"
+2,Permission,"CodeableConcept, Coding, ElementBase, Expression, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, PermissionInput, Reference, Resource"
+2,Person,"Address, Attachment, CodeableConcept, ContactPoint, ElementBase, Extension, HumanName, Identifier, Meta, Narrative, OperationOutcome, PersonInput, Reference, Resource"
+2,PersonalRelationship,"CodeableConcept, ElementBase, Extension, Meta, Narrative, OperationOutcome, Period, PersonalRelationshipInput, Reference, Resource"
+2,PlanDefinition,"Age, CodeableConcept, CodeableReference, Coding, ContactDetail, DataRequirement, Duration, ElementBase, Expression, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, PlanDefinitionInput, Quantity, Range, Ratio, Reference, RelatedArtifact, Resource, Timing, TriggerDefinition, UsageContext"
+2,Practitioner,"Address, Attachment, CodeableConcept, ContactPoint, ElementBase, Extension, HumanName, Identifier, Meta, Narrative, OperationOutcome, Period, PractitionerInput, Reference, Resource"
+2,PractitionerRole,"Availability, CodeableConcept, ElementBase, ExtendedContactDetail, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, PractitionerRoleInput, Reference, Resource"
+2,Procedure,"Age, Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, ProcedureInput, Range, Reference, Resource, Timing"
+2,Provenance,"CodeableConcept, CodeableReference, ElementBase, Extension, Meta, Narrative, OperationOutcome, Period, ProvenanceInput, Reference, Resource, Signature"
+2,Questionnaire,"Attachment, CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, QuestionnaireInput, Reference, Resource, UsageContext"
+2,QuestionnaireResponse,"Attachment, Coding, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, QuestionnaireResponseInput, Reference, Resource"
+2,RegulatedAuthorization,"CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, RegulatedAuthorizationInput, Resource"
+2,RelatedPerson,"Address, Attachment, CodeableConcept, ContactPoint, ElementBase, Extension, HumanName, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, RelatedPersonInput, Resource"
+2,RequestOrchestration,"Age, Annotation, CodeableConcept, CodeableReference, DataRequirement, Duration, ElementBase, Expression, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Range, Reference, RelatedArtifact, RequestOrchestrationInput, Resource, Timing"
+2,Requirements,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, RequirementsInput, Resource, UsageContext"
+2,ResearchStudy,"Annotation, Attachment, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, ResearchStudyInput, Resource"
+2,ResearchSubject,"CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, ResearchSubjectInput, Resource"
+2,RiskAssessment,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Range, Reference, Resource, RiskAssessmentInput"
+2,Schedule,"CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Reference, Resource, ScheduleInput"
+2,SearchParameter,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, SearchParameterInput, UsageContext"
+2,ServiceRequest,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Ratio, Reference, Resource, ServiceRequestInput, Timing"
+2,Slot,"CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource, SlotInput"
+2,Specimen,"Annotation, CodeableConcept, CodeableReference, Duration, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Reference, Resource, SpecimenInput"
+2,SpecimenDefinition,"CodeableConcept, Coding, ContactDetail, Duration, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Reference, Resource, SpecimenDefinitionInput, UsageContext"
+2,StructureDefinition,"CodeableConcept, Coding, ContactDetail, ElementBase, ElementDefinition, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, StructureDefinitionInput, UsageContext"
+2,StructureMap,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, StructureMapInput, UsageContext"
+2,Subscription,"CodeableConcept, Coding, ContactPoint, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource, SubscriptionInput"
+2,SubscriptionStatus,"CodeableConcept, Coding, ElementBase, Extension, Meta, Narrative, OperationOutcome, Reference, Resource, SubscriptionStatusInput"
+2,SubscriptionTopic,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Resource, SubscriptionTopicInput, UsageContext"
+2,Substance,"CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Resource, SubstanceInput"
+2,SubstanceDefinition,"Annotation, Attachment, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Ratio, Reference, Resource, SubstanceDefinitionInput"
+2,SubstanceNucleicAcid,"Attachment, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, SubstanceNucleicAcidInput"
+2,SubstancePolymer,"Attachment, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Resource, SubstancePolymerInput"
+2,SubstanceProtein,"Attachment, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, SubstanceProteinInput"
+2,SubstanceReferenceInformation,"CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Range, Reference, Resource, SubstanceReferenceInformationInput"
+2,SubstanceSourceMaterial,"CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, SubstanceSourceMaterialInput"
+2,SupplyDelivery,"CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Reference, Resource, SupplyDeliveryInput, Timing"
+2,SupplyRequest,"CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Quantity, Range, Reference, Resource, SupplyRequestInput, Timing"
+2,Task,"Address, Age, Annotation, Attachment, Availability, CodeableConcept, CodeableReference, Coding, ContactDetail, ContactPoint, Count, DataRequirement, Distance, Dosage, Duration, ElementBase, Expression, ExtendedContactDetail, Extension, HumanName, Identifier, Meta, Money, Narrative, OperationOutcome, ParameterDefinition, Period, Quantity, Range, Ratio, RatioRange, Reference, RelatedArtifact, Resource, SampledData, Signature, Timing, TriggerDefinition, UsageContext"
+2,TerminologyCapabilities,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, TerminologyCapabilitiesInput, UsageContext"
+2,TestPlan,"Base, CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Resource, TestPlanInput, UsageContext"
+2,TestReport,"Attachment, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, Resource, TestReportInput"
+2,TestScript,"CodeableConcept, Coding, ContactDetail, ElementBase, Expression, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource, TestScriptInput, UsageContext"
+2,Transport,"Annotation, CodeableConcept, CodeableReference, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Reference, Resource, TransportInput"
+2,ValueSet,"CodeableConcept, Coding, ContactDetail, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Period, RelatedArtifact, Resource, UsageContext, ValueSetInput"
+2,VerificationResult,"CodeableConcept, ElementBase, Extension, Meta, Narrative, OperationOutcome, Reference, Resource, Signature, Timing, VerificationResultInput"
+2,VisionPrescription,"Annotation, CodeableConcept, ElementBase, Extension, Identifier, Meta, Narrative, OperationOutcome, Quantity, Reference, Resource, VisionPrescriptionInput"

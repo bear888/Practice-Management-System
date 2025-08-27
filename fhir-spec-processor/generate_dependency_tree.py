@@ -63,8 +63,12 @@ def main():
         for dep in data['raw_deps']:
             if dep in SCALAR_TYPES or dep == resource:
                 continue
-            if dep in type_to_resource_map and type_to_resource_map[dep] != resource:
-                dependency_map[resource].add(type_to_resource_map[dep])
+
+            # A dependency is considered external if it's not defined within the
+            # scope of the current resource's file. This correctly handles
+            # globally defined types like 'HumanName' or 'Identifier'.
+            if type_to_resource_map.get(dep) != resource:
+                dependency_map[resource].add(dep)
 
     graph = {resource: list(deps) for resource, deps in dependency_map.items()}
     ts = TopologicalSorter(graph)
